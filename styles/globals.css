@@ -1,0 +1,155 @@
+/* Restablecer el estilo por defecto en todos los elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos globales del cuerpo de la página */
+body {
+  background-color: #1f1f1f; /* Fondo oscuro inspirado en la atmósfera de Evangelion */
+  color: #e6e6e6; /* Color claro para el texto */
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: url('https://link-a-imagen-de-evangelion.com/fondo.jpg'); /* Fondo opcional */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mejorar la accesibilidad y la legibilidad de los enlaces */
+a {
+  text-decoration: none;
+  color: #00ff00; /* Verde tipo EVA */
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #ff0000; /* Rojo brillante como referencia al AT Field */
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ff4d00; /* Rojo característico de los logos de Evangelion */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto de sombra para dar contraste */
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y translúcido */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los botones: estilo con un toque de Neon Genesis */
+.button {
+  display: inline-block;
+  background-color: #ff4d00; /* Rojo intenso */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 2px solid #ff4d00;
+}
+
+.button:hover {
+  background-color: #00ff00; /* Verde EVA al pasar el cursor */
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #ff0000; /* Rojo de emergencia */
+  transform: translateY(0);
+}
+
+/* Estilo para los formularios */
+input,
+textarea,
+select {
+  border: 1px solid #666; /* Bordes oscuros con un toque de detalle */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+  background-color: #333;
+  color: #e6e6e6;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff4d00; /* Rojo al seleccionar */
+  outline: none;
+}
+
+/* Estilo para los bloques de código */
+pre {
+  background-color: #282c34;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+/* Estilo para las imágenes dentro del contenido */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para la tipografía en general */
+p,
+li,
+ol,
+ul {
+  font-size: 1rem;
+  color: #e6e6e6;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo para las tablas */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  background-color: #222;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #444;
+  color: #e6e6e6;
+}
+
+/* Efecto especial para la caja de alerta (AT Field) */
+.alert {
+  background-color: #ff0000; /* Rojo de emergencia */
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
